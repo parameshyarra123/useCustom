@@ -1,0 +1,65 @@
+:root {
+  --bg: #f8f9fa;
+  --surface: #ffffff;
+  --text: #1a1a1a;
+  --text-muted: #6c757d;
+  --accent: #ff4500;
+  --success: #2b8a3e;
+  --danger: #c92a2a;
+  --border: #e9ecef;
+}
+
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex; justify-content: center; padding: 40px 20px;
+}
+.app-container { width: 100%; max-width: 800px; }
+
+/* Dashboard Cards Packaging */
+.view-card { 
+  background: var(--surface); padding: 30px; border-radius: 8px; 
+  border: 1px solid var(--border); box-shadow: 0 4px 12px rgba(0,0,0,0.03); 
+}
+
+/* Structural Components Separators */
+.layout-panel-table, .layout-panel-cards { position: relative; padding-bottom: 90px; }
+.layout-panel-cards { margin-top: 30px; }
+
+/* The Explicit 2-Column Card Grid Core Layout rule */
+.cards-grid { 
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 16px; 
+  margin-top: 20px; 
+}
+
+.metric-block-card { 
+  background: var(--bg); padding: 20px; border-radius: 6px; 
+  border: 1px solid var(--border); 
+}
+.card-header { display: flex; justify-content: space-between; align-items: center; }
+.card-metric { font-size: 15px; font-weight: 700; color: var(--accent); }
+
+/* Table Elements Rules styling */
+.custom-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+.custom-table th { padding: 12px; color: var(--text-muted); border-bottom: 2px solid var(--border); font-size: 12px; text-transform: uppercase; }
+.custom-table td { padding: 12px; border-bottom: 1px solid var(--border); font-size: 14px; }
+
+/* Absolute Control Hub Elements */
+.bottom-left-controls { position: absolute; bottom: 24px; left: 30px; display: flex; gap: 8px; }
+.control-btn { width: 40px; height: 40px; border-radius: 6px; font-size: 20px; font-weight: 700; color: white; border: none; cursor: pointer; }
+.control-btn.minus { background: #495057; }
+.control-btn.plus { background: #364fc7; }
+.control-btn.plus-orange { background: var(--accent); }
+
+/* Statuses and elements items labels markers */
+.metric-tag { background: #e6fcf5; color: var(--success); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; }
+.status-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.status-dot.active { background: var(--success); }
+.status-dot.pending { background: #f59f00; }
+.success-text { color: var(--success); font-weight: 600; }
+.danger-text { color: var(--danger); font-weight: 600; }
+
+.loading-cell { text-align: center; opacity: 0.6; }
+.loading-card { grid-column: 1 / -1; text-align: center; opacity: 0.6; }

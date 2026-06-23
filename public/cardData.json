@@ -1,0 +1,12 @@
+[
+  { "id": 1, "title": "Server CPU Core Load", "metrics": "24% Active Capacity", "status": "Active" },
+  { "id": 2, "title": "Active RAM Allocation", "metrics": "6.4GB / 16GB In Use", "status": "Active" },
+  { "id": 3, "title": "Daily Gross Revenue Margin", "metrics": "+$4,890.50 Growth", "status": "Active" },
+  { "id": 4, "title": "API Gateway Errors Rate", "metrics": "0.04% Incidents", "status": "Pending" },
+  { "id": 5, "title": "CDN Edge Node Hits", "metrics": "1.2M Total Visits", "status": "Active" },
+  { "id": 6, "title": "Database Read Pool", "metrics": "3 Nodes Synced", "status": "Active" },
+  { "id": 7, "title": "Elasticsearch Index Speed", "metrics": "142ms Query Run", "status": "Active" },
+  { "id": 8, "title": "Frontend App Bundle Size", "metrics": "142KB Gzipped", "status": "Active" },
+  { "id": 9, "title": "Active WebSocket Sockets", "metrics": "8,422 Channels Open", "status": "Active" },
+  { "id": 10, "title": "CRON Scheduled Database Backups", "metrics": "Next Run in 4 Hours", "status": "Pending" }
+]
